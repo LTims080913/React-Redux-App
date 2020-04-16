@@ -15,7 +15,7 @@ const initialState = {
         return {
           ...state,
           isFetching: false,
-          quote: action.payload,
+          value: action.payload,
           error: ''
         };
       case 'FETCH_QUOTE_FAILURE':

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: navajowhite;
 }
 
 .App-logo {
@@ -35,4 +36,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img{
+  width: 20%;
+  border-radius: 50%;
+}
+
+h1{
+  color: darkorange;
+}
+
+h3{
+  color: peru;
+  width: 50%;
+  margin: 0% 25% 2% 25%;
+}
+
+button{
+  background-color: orangered;
+  height: 10vh;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 2%;
 }

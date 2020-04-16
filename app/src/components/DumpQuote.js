@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import Loader from 'react-loader-spinner';
 import {fetchQuote} from '../store/actions/quoteAction';
+import orangie from '../images/Orange.jpg'
 
 const DumpQuote = props => {
     useEffect(() => {
@@ -15,7 +16,9 @@ const DumpQuote = props => {
             {props.isFetching && (
                 <Loader type="Puff" color="#00BFFF" height={100} width={100} />
             )}
-            {props.quote && <h3>"{props.quote}"</h3>}
+             <img src={orangie} alt='my pal Orangie'/>
+            {props.value && <h3>"{props.value}"</h3>}
+
             {props.error && <p className="error">{props.error}</p>}
             <button onClick={props.fetchQuote}>What else does Orangie say?</button>
         </div>

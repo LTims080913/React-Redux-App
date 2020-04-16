@@ -21,6 +21,4 @@ export const fetchQuote = () => {
   };
 };
 
-export const updateTitle = newTitle => {
-  return {};
-};
+
